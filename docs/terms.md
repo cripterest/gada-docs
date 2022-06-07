@@ -1,7 +1,5 @@
 ---
-title: terminologies
 sidebar_position: 2
-tags: terminologies nft json xml
 ---
 
 # Terminologies
@@ -26,24 +24,3 @@ Since NFTs are tokens they can be sold for exchange of cryptocurrencies on the b
 
 ## Utility
 A `Utility` is a code name for a resource you create through the Gada API, you can envision a utiliI’m to represent a resource created uniquely for a purpose of deploying it to a blockchain. We've developed an array of methods to help you create, mint and export utilities to the blockchain as NFT using Gada SDK. A typical example of a `Utility` created with the Gada SDK should return the response similar to the code snippet below:
-
-
-
-
-<!-- export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
-    }}
-    onClick={() => {
-      alert(`You clicked the color ${color} with label ${children}`);
-    }}>
-    {children}
-  </span>
-);
-
-<Highlight color="#25c2a0">Docusaurus green</Highlight> -->
