@@ -23,4 +23,4 @@ A non-Fungible Token (NFT) is a financial asset consisting of data securely stor
 Since NFTs are tokens they can be sold for exchange of cryptocurrencies on the blockchain.
 
 ## Utility
-A `Utility` is a code name for a resource you create through the Gada API, you can envision a utiliI’m to represent a resource created uniquely for a purpose of deploying it to a blockchain. We've developed an array of methods to help you create, mint and export utilities to the blockchain as NFT using Gada SDK. A typical example of a `Utility` created with the Gada SDK should return the response similar to the code snippet below:
+A `Utility` is a code name for a resource you create through the Gada API, you can envision a utiliI’m to represent a resource created uniquely for a purpose of deploying it to a blockchain. We've developed an array of methods to help you create, mint and export utilities to the blockchain as NFT using Gada SDK.

@@ -1,3 +1,8 @@
+
+The `getUtilities` method returns all the utilities created via the Gada API uniquely linked to a user. A utility can either be created independently or derived from a [masterUtility](http:/localhost:3000/createMasterUtility). When you perform a `POST` request on the `getUtilities` method, you have some parameters you can leverage to control the response you get.
+
+The `getUtilities` request has 3 valuable parts the `id`, `params` and `method` and looks like the code snippet below:
+
 ```json
   {
   "jsonrpc": "2.0",
@@ -11,6 +16,24 @@
 }
 ```
 
-All `Utilities` created with the Gada SDK folows one standard the `JSON RPC 2.0`. A `Utility` have 3 valuable parts the `id`, `params` and `method`.
-`id`: A unique identifier for each `Utility`.
-`params`: each Utility accepts paremeters that
+| Params                       | Required                              | Description
+|------------------------------|---------------------------------------|---------------------------------------|
+| id                           | Yes                                   | The unique indentifier for the (`id`) utility.
+| method                       | yes                                   | The method that gets executed when the request is sent. Returns (JSON)
+|                              |                                       |
+| params                       | No                                    | Accepts an `object` containing unique indetifiers for the request.
+| userId                       |                                       |
+| _derived                     |                                       |
+| _materUtilityId              |                                       |
+
+A typical response object return from the `getUtilities` method looks similar to the snippet below:
+
+```json
+ {
+  "jsonrpc": "2.0",
+  "result": [
+
+  ],
+  "id": 1
+}
+```
