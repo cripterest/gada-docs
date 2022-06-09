@@ -1,7 +1,11 @@
+---
+sidebar_position: 3
+---
 
-The `getUtilities` method returns all the utilities created via the Gada API uniquely linked to a user. A utility can either be created independently or derived from a [masterUtility](http:/localhost:3000/createMasterUtility). When you perform a `POST` request on the `getUtilities` method, you have some parameters you can leverage to control the response you get.
 
-The `getUtilities` request has 3 valuable parts the `id`, `params` and `method` and looks like the code snippet below:
+The `getUtilities` method returns all the utilities created via the Gada API. It returns all utilities that were either created by a user through the [createUtility](http:/localhost:3000/createUtility) method, or derived from a [masterUtility](http:/localhost:3000/createMasterUtility).
+
+The `getUtilities` method accepts three optional arguments `_userId`, `_derived` and `_masterUtilityId`.
 
 ```json
   {
@@ -18,21 +22,30 @@ The `getUtilities` request has 3 valuable parts the `id`, `params` and `method` 
 
 | Params                       | Required                              | Description
 |------------------------------|---------------------------------------|---------------------------------------|
-| id                           | Yes                                   | The unique indentifier for the (`id`) utility.
-| method                       | yes                                   | The method that gets executed when the request is sent. Returns (JSON)
-|                              |                                       |
-| params                       | No                                    | Accepts an `object` containing unique indetifiers for the request.
-| userId                       |                                       |
-| _derived                     |                                       |
-| _materUtilityId              |                                       |
+| userId `string`              | No                                    | Returns only utilities own by the `userId` specified.
+| derived `Boolean`            | No                                    | Returns utilities that were derived from mater utilities if set to `true`.
+| materUtilityId `string`      | No                                    | Returns all utilities with the `masterUtilityId` specified.
 
-A typical response object return from the `getUtilities` method looks similar to the snippet below:
+The `JSON` response below is returned from a `POST` request to the `getUtilities` method without any option passed to the request body `params`.
 
 ```json
- {
+{
   "jsonrpc": "2.0",
   "result": [
-
+    {
+      "_id": "1fb4ab34-1b2e-4840-8789-12e495003e81",
+      "name": "Pulpo exclusivo",
+      "description": "Este coleccionable es único!",
+      "imageURL": "https://api.gadalabs.com/solanaMetadataImg?id=c13ea2f3-221f-4561-83a8-f4645736b53e",
+      "userId": "juan@gmail.com"
+    },
+    {
+      "_id": "a2fd3085-79cf-4c15-a161-0f5d15b3baf9",
+      "name": "My First Utility",
+      "description": "This is my first utility.",
+      "imageURL": "https://api.gadalabs.com/solanaMetadataImg?id=041a1606-8573-4508-ad22-c303658bb43d",
+      "userId": "etu.e@gmail.com"
+    }
   ],
   "id": 1
 }
