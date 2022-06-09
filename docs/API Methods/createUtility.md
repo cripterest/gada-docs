@@ -25,17 +25,13 @@ The snippet below is a clear illustration of what a new utility request object l
 
 | Params                       | Required                              | Description
 |------------------------------|---------------------------------------|---------------------------------------|
-| id                           | Yes                                   | The unique indentifier for the (`id`) utility.
-| method                       | yes                                   | The method that gets executed when the request is sent. Returns (JSON)
-|                              |                                       |
-| params                       | No                                    | Accepts an `object` containing unique indetifiers for the request.
-| name                         |                                       |
-| description                  |                                       |
-| userId                       |                                       |
-| image                        | No                                    |
-| imageURL                     | No                                    |
+| name `string`                | Yes                                   | Specifies the name for the utility.
+| description `string`         | Yes                                   | A short description of the utility.
+| userId `string`              | No                                    | Used to determine ownership of the utility if specified.
+| image  `string`              | No                                    | A fallback image for a utility. without an `imageUrl`.
+| imageURL  `string`           | No                                    | A link to a image for the utility.
 
-The `JSON` object below is a response returned after creating a new request:
+The `JSON` object below is a response returned after creating a new utility with the request-object above:
 
 ```json
   {
