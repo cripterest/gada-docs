@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 10
 ---
 
 The `exportNft` converts a utility to an `NFT` and deploys it to the blockchain. The process can take a few seconds depending on the communication between the `Solana` blockchain and Gada API.

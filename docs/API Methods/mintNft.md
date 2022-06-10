@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 9
 ---
 
 The `mintNft` method converts an existing `utility` on the Gada API to an actual `NFT` deployable to the blockchain. When you mint a utility, you're simply preparing the utility for deployment to the blockchain. The process can take a few seconds depending on the communication between the `Solana` blockchain and the Gada API itself.
