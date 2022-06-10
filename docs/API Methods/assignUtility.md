@@ -25,6 +25,8 @@ To assign a utility to a user you'll need to pass the `utilityId` and `userId` o
 | utilityId `string`           | Yes                                    | The id of the utility assign a new user.
 | userId `string`              | Yes                                   | The id of the new user to maintain ownership of the utility.
 
+A typical `JSON` object returned after assigning a utility to a user should look similar to the one below:
+
 ```json
 {
   "jsonrpc": "2.0",
