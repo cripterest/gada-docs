@@ -3,7 +3,7 @@ sidebar_position: 3
 ---
 
 
-The `getUtilities` method returns all the utilities created via the Gada API. It returns all utilities that were either created by a user through the [createUtility](http:/localhost:3000/createUtility) method, or derived from a [masterUtility](http:/localhost:3000/createMasterUtility).
+The `getUtilities` method returns all the utilities created via the Gada API. It returns all utilities that were either created by a user through the [createUtility](createUtility.md) method, or derived from a [masterUtility](createMasterUtility.md).
 
 The `getUtilities` method accepts three optional arguments `userId`, `derived` and `masterUtilityId`.
 
