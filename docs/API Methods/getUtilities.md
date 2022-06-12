@@ -5,16 +5,16 @@ sidebar_position: 3
 
 The `getUtilities` method returns all the utilities created via the Gada API. It returns all utilities that were either created by a user through the [createUtility](http:/localhost:3000/createUtility) method, or derived from a [masterUtility](http:/localhost:3000/createMasterUtility).
 
-The `getUtilities` method accepts three optional arguments `_userId`, `_derived` and `_masterUtilityId`.
+The `getUtilities` method accepts three optional arguments `userId`, `derived` and `masterUtilityId`.
 
 ```json
   {
   "jsonrpc": "2.0",
   "method": "getUtilities",
   "params": {
-    "_userId": "john.doa@gmail.com",
-    "_derived": true,
-    "_masterUtilityId": "b5edd5c9-f363-438f-ab69-4b73f81ea11a"
+    "userId": "john.doa@gmail.com",
+    "derived": true,
+    "masterUtilityId": "b5edd5c9-f363-438f-ab69-4b73f81ea11a"
   },
   "id": 1
 }

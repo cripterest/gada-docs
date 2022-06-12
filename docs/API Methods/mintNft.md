@@ -8,7 +8,7 @@ The `mintNft` method converts an existing `utility` on the Gada API to an actual
 This is a blockchain method that performs minting on blockchain.
 :::
 
-To mint a utility, you need to supply the `utilityId` to the request-body (`params`). An ideal request with `mintNft` looks similar to the request-body below:
+To mint a utility, you need to supply the `utilityId` to the request-body (`params`). An ideal request with `mintNFT` looks similar to the request-body below:
 
 ```json
   {

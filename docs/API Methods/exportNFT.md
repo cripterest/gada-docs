@@ -2,13 +2,13 @@
 sidebar_position: 10
 ---
 
-The `exportNft` converts a utility to an `NFT` and deploys it to the blockchain. The process can take a few seconds depending on the communication between the `Solana` blockchain and Gada API.
+The `exportNFT` converts a utility to an `NFT` and deploys it to the blockchain. The process can take a few seconds depending on the communication between the `Solana` blockchain and Gada API.
 
 :::note
 This is a blockchain method that performs minting on blockchain.
 :::
 
-To export a utility as NFT, you need to supply the `utilityId` to the request-body (`params`). An example request with `exportNft` method looks similar to the request object below:
+To export a utility as NFT, you need to supply the `utilityId` to the request-body (`params`). An example request with `exportNFT` method looks similar to the request object below:
 
 ```json
   {

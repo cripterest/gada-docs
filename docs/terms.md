@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Terminologies
+# Terminology
 
 ## JSON RPC
 If you are a web 2.0 developer, you should already be familiar with using the `REST` architecture (RESTful API) to build web services. The `JSON-RPC` is a lightweight remote procedure call (RPC) protocol that primarily relies on predefined data structures and rules around their processing. The JSON-RPC is mostly preferred when building web 3.0 applications because it allows for mapping to method calls and communications can be easily understood.
@@ -23,4 +23,7 @@ A non-Fungible Token (NFT) is a financial asset consisting of data securely stor
 Since NFTs are tokens they can be sold for exchange of cryptocurrencies on the blockchain.
 
 ## Utility
-A `Utility` is a code name for a resource you create through the Gada API, you can envision a utiliI’m to represent a resource created uniquely for a purpose of deploying it to a blockchain. We've developed an array of methods to help you create, mint and export utilities to the blockchain as NFT using Gada SDK.
+A `Utility` is a code name for a resource you create through the Gada API, you can envision a utility to represent a resource created uniquely for a purpose of deploying it to a blockchain. We've developed an array of methods to help you create, mint and export utilities to the blockchain as NFT using Gada SDK.
+
+
+## Master Utility
