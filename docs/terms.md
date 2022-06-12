@@ -25,6 +25,5 @@ Since NFTs are tokens they can be sold for exchange of cryptocurrencies on the b
 ## Utility
 A `Utility` is a code name for a resource you create through the Gada API, you can envision a utility to represent a resource created uniquely for a purpose of deploying it to a blockchain. We've developed an array of methods to help you create, mint and export utilities to the blockchain as NFT using Gada API.
 
-
 ## Master Utility
 A master utility is like a pre-designed template that other utilities can be derived from them. Think about a master utility as a collection of `NFT`s held by a user on the blockchain. The [createMasterUtility](./API%20Methods/createMasterUtility.md) method allows users to create master utilities using the Gada API.
