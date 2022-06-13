@@ -15,7 +15,11 @@ To export a utility as NFT, you need to supply the `utilityId` to the request-bo
   "jsonrpc": "2.0",
   "method": "exportNFT",
   "params": {
-    "utilityId": "a2fd3085-79cf-4c15-a161-0f5d15b3baf9"
+    "utilityId": "a2fd3085-79cf-4c15-a161-0f5d15b3baf9",
+    "auth": {
+      "apiKeyId": "your_api_Key_Id",
+      "apiKeySecret": "your_api_Key_Secret"
+    },
   },
   "id": 1
 }
@@ -53,3 +57,13 @@ A typical `JSON` object returned after exporting a utility as `NFT` should look 
   "id": 1
 }
 ```
+
+The `nft` info is different from the rest of the data returned, it is the on-chain information returned from the Solona `blockchain` for the NFT.
+
+- `mintDate`: The date the NFT got minted.
+- `mintAddress`: The mint address of the NFT
+- `mintTransaction`: A Unique identifier for the mint transaction.
+- `mintAddress`: The origin of the NFT.
+- `metadataAddress`: The origin for the meta info for the NFT
+- `exportWalletPublicKey` The public wallet of address of the current owner of the NFT.
+- `exportWalletPrivateKey` The private wallet of address of the current owner of the NFT.

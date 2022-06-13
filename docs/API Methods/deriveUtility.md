@@ -10,7 +10,11 @@ The `deriveUtility` method derives a utility from an exiting `masterUtility`. Wh
   "method": "deriveUtility",
   "params": {
     "masterUtilityId": "7cee897c-ca27-492f-8fdd-869b9b242df9",
-    "userId": "etu.e@gmail.com"
+    "userId": "etu.e@gmail.com",
+    "auth": {
+      "apiKeyId": "your_api_Key_Id",
+      "apiKeySecret": "your_api_Key_Secret"
+    },
   },
   "id": 1
 }

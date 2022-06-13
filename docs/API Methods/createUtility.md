@@ -17,7 +17,11 @@ The snippet below is a clear illustration of what a new utility request object l
     "name": "My First Utility",
     "description": "This is my first utility.",
     "imageURL": "https://picsum.photos/id/237/200/300",
-    "userId": "etu.e@gmail.com"
+    "userId": "etu.e@gmail.com",
+    "auth": {
+      "apiKeyId": "your_api_Key_Id",
+      "apiKeySecret": "your_api_Key_Secret"
+    },
   },
   "id": 1
 }

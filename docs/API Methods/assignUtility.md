@@ -13,7 +13,11 @@ To assign a utility to a user you'll need to pass the `utilityId` and `userId` o
   "method": "assignUtility",
   "params": {
     "utilityId": "83ea81c3-43e9-44ed-8e56-f35f1055358e",
-    "userId": "etu.e@gmail.com"
+    "userId": "etu.e@gmail.com",
+    "auth": {
+      "apiKeyId": "your_api_Key_Id",
+      "apiKeySecret": "your_api_Key_Secret"
+    },
   },
   "id": 1
 }

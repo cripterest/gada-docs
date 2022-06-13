@@ -13,7 +13,11 @@ To create a master utility, you'll need to construct a `POST` request with a req
     "name": "My summer image collection",
     "description": "This are all the images I took during summer.",
     "imageUrl": "https://picsum.photos/id/237/200/300",
-    "generator": "copy"
+    "generator": "copy",
+    "auth": {
+      "apiKeyId": "your_api_Key_Id",
+      "apiKeySecret": "your_api_Key_Secret"
+    },
   },
   "id": 1
 }

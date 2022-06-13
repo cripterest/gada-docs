@@ -8,6 +8,12 @@ The `getMasterUtilities` method returns all the master utilities created via the
   {
   "jsonrpc": "2.0",
   "method": "getMasterUtilities",
+  "params": {
+    "auth": {
+      "apiKeyId": "your_api_Key_Id",
+      "apiKeySecret": "your_api_Key_Secret"
+    },
+  }
   "id": 1
 }
 ```

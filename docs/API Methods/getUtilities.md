@@ -14,7 +14,11 @@ The `getUtilities` method accepts three optional arguments `userId`, `derived` a
   "params": {
     "userId": "john.doa@gmail.com",
     "derived": true,
-    "masterUtilityId": "b5edd5c9-f363-438f-ab69-4b73f81ea11a"
+    "masterUtilityId": "b5edd5c9-f363-438f-ab69-4b73f81ea11a",
+    "auth": {
+      "apiKeyId": "your_api_Key_Id",
+      "apiKeySecret": "your_api_Key_Secret"
+    },
   },
   "id": 1
 }

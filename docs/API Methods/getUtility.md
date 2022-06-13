@@ -13,7 +13,12 @@ To retrieve a utility with the `getUtility` method simply construct a request ob
   "method": "getUtility",
   "params": {
     "userId": "etu.e@gmail.com",
-    "utilityId": "a2fd3085-79cf-4c15-a161-0f5d15b3baf9"
+    "utilityId": "a2fd3085-79cf-4c15-a161-0f5d15b3baf9",
+    "auth": {
+      "apiKeyId": "your_api_Key_Id",
+      "apiKeySecret": "your_api_Key_Secret"
+    },
+  }
   },
   "id": 1
 }
