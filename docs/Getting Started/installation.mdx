@@ -1,0 +1,33 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Getting Started
+To get started using the **Gada API**, visit the Gada [dashboard](https://dashboard.gadalabs.com), create an account, and generate your personal `API keys`. You can now use the API keys to start marking requests.
+
+### Authentication
+
+| Security Scheme Type            | apiKeyId     |
+|---------------------------------|--------------|
+| Header parameter name           | apiKeySecret |
+
+### Requirements
+- [Postman](https://www.postman.com/) or any other `API` testing application of your choice.
+- [Yarn](https://yarnpkg.com/). Yarn is a performant package manager for JavaScript and replaces the `npm` client.
+
+### Making a request
+
+Every request to the Gada API are post request, you must supply your API keys to the `auth` param every time you make a request. To make a request with the `getUtilities` add the code block below to the `body` section of postman and set the request-URL to  [api.gadalabs.com](https://api.gadalabs.com).
+
+```json
+  {
+  "jsonrpc": "2.0",
+  "method": "getUtilities",
+  "params": {
+    "auth": {
+      "apiKeyId": "your_api_Key_Id",
+      "apiKeySecret": "your_api_Key_Secret"
+    },
+  },
+  "id": 1
+}
+```

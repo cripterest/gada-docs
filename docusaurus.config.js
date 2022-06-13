@@ -57,7 +57,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Gada Labs',
+        title: 'Gada Labs -beta',
         logo: {
           alt: 'Gada Labs',
           src: 'img/logo.jpeg',
